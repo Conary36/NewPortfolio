@@ -15,36 +15,7 @@ $c: #4B384C;
     height: 100vh;
     color: white;
     background-color: #F5F105;
-    // background: 	linear-gradient(90deg, 
-	// 			#632C65, #E2A9E5);
-
-    //         &:before, &:after {
-	// 	--p: 0;
-	// 	--s: calc(1 - 2*var(--p));
-	// 	// position: absolute;
-	// 	top: 0; right: 0; bottom: 0; left: 0;
-	// 	-webkit-mask: var(--m);
-	// 	mask: var(--m);
-	// 	content: ''
-	// }
-	
-	// &:after { --p: 1 }
-
-    //     	&:before, &:after {
-    //             background:
-	// 			linear-gradient(calc(var(--s)*45deg), 
-	// 					transparent calc(50% - 1px), $c 0, 
-	// 					$c calc(50% + 1px), transparent 0) 
-	// 				0 0/ #{.25*$s .25*$s};
-	// 		--m: 
-	// 			linear-gradient(red 50%, transparent 0) 
-	// 					0 0/ #{2*$s 2*$s}, 
-	// 			linear-gradient(90deg, red 50%, transparent 0) 
-	// 			calc(var(--p)*#{$s}) 0/ #{2*$s 2*$s};
-	// 		-webkit-mask-composite: xor;
-	// 		mask-composite: exclude;
-    // }		
-
+    
     overflow-x: hidden;
     padding-top: 20px;
     z-index: 2;
@@ -62,7 +33,7 @@ $c: #4B384C;
           
             
            .navi{
-                display: flex;
+               display: flex;
                margin: 5%;
                padding-top: 20px 10px;
                &:hover{
