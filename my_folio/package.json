@@ -15,8 +15,8 @@
     "react-social-icons": "^4.1.0",
     "sass": "^1.32.12",
     "sass-loader": "^11.1.0",
+    "swiper": "^6.6.2",
     "web-vitals": "^1.0.1"
-    
   },
   "scripts": {
     "start": "react-scripts start",

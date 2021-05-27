@@ -6,7 +6,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Projects from './components/Projects'
 import Navigation from './components/Navigation';
-import Stars from './components/Stars_bg'
+// import Stars from './components/Stars_bg'
 import './App.scss'
 
 
@@ -17,7 +17,7 @@ function App() {
    <div className="App">
    <BrowserRouter>
     <Navigation/>
-        <Stars/>
+      
       <Switch>
         <Route component={Home} path='/' exact={true}/>
         <Route component={About} path='/about'/>
