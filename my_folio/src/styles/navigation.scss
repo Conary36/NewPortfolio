@@ -5,8 +5,12 @@ $g: 1em;
 $n: 7;
 $c: #4B384C;
 
-.sidebar-left{
+.navbar{
+    position: fixed !important;
+}
 
+.sidebar-left{
+    
     position: fixed;
     float: left;
     top: 0;
@@ -16,9 +20,9 @@ $c: #4B384C;
     color: white;
     background-color: #F5F105;
     
-    overflow-x: hidden;
+   // overflow-x: hidden;
     padding-top: 20px;
-    z-index: 2;
+   // z-index: 2;
         .vertical-text-left{
             display: flex;
             align-items: center;
@@ -29,7 +33,7 @@ $c: #4B384C;
             font-family: 'Menlo', monospace;
             white-space: nowrap;
             letter-spacing: 3px;
-            position: relative;
+           // position: relative;
           
             
            .navi{
