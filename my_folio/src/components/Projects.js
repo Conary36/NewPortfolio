@@ -55,48 +55,55 @@ export default function Projects() {
   // projectUrl: "https://stashfoodapp.netlify.app";
 
   return (
-    <Swiper
-      direction={"vertical"}
-      slidesPerView={1}
-      spaceBetween={30}
-      mousewheel={true}
-      pagination={{
-        clickable: true,
-      }}
-      className="mySwiper"
-    >
-      {projectData.map((proj, i) => (
-        <Card key={i}>
-          <SwiperSlide>
-            {proj.projectImg && (
-              <Image
-                className="projectImg"
-                src={require(`../images/${proj.projectImg}`).default}
-                alt={proj.alt}
-                fluid
-              />
-            )}
+    <div className="overall-container">
+      <Swiper
+        className="projects-slider"
+        direction={"vertical"}
+        // slidesPerView={1}
+        spaceBetween={30}
+        effect={"fade"}
+        loop={true}
+        mousewheel={{ invert: false }}
+        pagination={{
+          el: "projects-slider__pagination",
+          clickable: true,
+        }}
+        // className="mySwiper"
+      >
+       
+          {projectData.map((proj, i) => (
+            <SwiperSlide
+              className="parentSwiper"  
+            >
+              {proj.projectImg && (
+                <div className="projects-slider__img">
+                  <img
+                    src={require(`../images/${proj.projectImg}`).default}
+                    alt={proj.alt}
+                    fluid
+                  />
+                </div>
+              )}
 
-            <div className="secondPart">
-              <ul>
-                <li>{proj.projectName}</li>
-                <li>{proj.description}</li>
-                <li>
-                  {" "}
-                  <Button
-                    href={proj.projectUrl}
-                    className="projects-slider__button"
-                    target="_blank"
-                  >
-                    Open Link
-                  </Button>
-                </li>
-              </ul>
-            </div>
-          </SwiperSlide>
-        </Card>
-      ))}
-    </Swiper>
+              <div className="projects-slider__content">
+                <div className="projects-slider__title">{proj.projectName}</div>
+                <div className="projects-slider__text">{proj.description}</div>
+              </div>
+
+              <Button
+                href={proj.projectUrl}
+                className="projects-slider__button"
+                target="_blank"
+              >
+                Open Link
+              </Button>
+            </SwiperSlide>
+          ))}
+
+          <div className="projects-slider__pagination"></div>
+       
+      </Swiper>
+    </div>
 
     // <Swiper
     //   className="projects-slider"
@@ -154,3 +161,22 @@ export default function Projects() {
     // </Swiper>
   );
 }
+
+/*
+
+<ul>
+                  <li>{proj.projectName}</li>
+                  <li>{proj.description}</li>
+                  <li>
+                    {" "}
+                    <Button
+                      href={proj.projectUrl}
+                      className="projects-slider__button"
+                      target="_blank"
+                    >
+                      Open Link
+                    </Button>
+                  </li>
+                </ul>
+
+*/
