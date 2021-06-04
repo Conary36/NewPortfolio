@@ -6,9 +6,6 @@ import SwiperCore, { Mousewheel, Pagination, EffectFade, Navigation } from "swip
 import firebase from "../firebase";
 import { Card, Image, Button, ButtonGroup } from "react-bootstrap";
 import "../styles/projects.scss";
-// import { EffectFade } from "swiper/js/swiper.esm";
-// import "../styles/swiper.css";
-// import {Link} from 'react-router-dom'
 import "swiper/components/effect-fade/effect-fade.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
@@ -57,7 +54,7 @@ export default function Projects() {
         loop={true}
         mousewheel={true}
         pagination={{
-          el: "projects-slider__pagination",
+          // el: "projects-slider__pagination",
           clickable: true,
         }}
       >
@@ -74,8 +71,8 @@ export default function Projects() {
             )}
 
             <div className="">
-              <div className="">{proj.projectName}</div>
-              <div className="">{proj.description}</div>
+              <div className="projects-slider__title">{proj.projectName}</div>
+              <div className="projects-slider__text">{proj.description}</div>
             </div>
 
             <Button
@@ -85,13 +82,11 @@ export default function Projects() {
             >
               Open Link
             </Button>
+            <div className="projects-slider__pagination"></div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="projects-slider__pagination"></div>
     </div>
-
-   
   );
 }
 

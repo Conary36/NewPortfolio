@@ -10,8 +10,8 @@ export default function Home(){
         </section>
         <section className='bio'>
         <span>Hello, my name is Conary,
-            I am a Full-Stack Web Developer.
-            What can we create together?
+            I am a Front-End Web Developer with knowledge of<br/>
+            the Back-End. What can we create together?
         </span><br/>
         </section>
      </div>

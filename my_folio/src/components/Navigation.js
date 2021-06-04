@@ -12,28 +12,34 @@ import '../styles/navigation.scss'
 export default function Navigation(){
 
 
-return(
-   
-    
-    <Navbar className="sidebar-left">
-            <Nav id="nav" className="vertical-text-left">
-                <NavLink className="navi" to="contact">
-                    Contact
-                </NavLink>
-                <NavLink className="navi" to="about">
-                    About
-                </NavLink>
-                  
-                <NavLink className="navi" to="/" exact>
-                    Home
-                </NavLink>
-                
-            </Nav>
-      
-    </Navbar>
-     
-  
-    
-)
+return (
+  <Navbar className="sidebar-left">
+    <Nav id="nav" className="vertical-text-left">
+      <NavLink
+        className="navi"
+        activeClassName="navi nav-link active"
+        to="contact"
+      >
+        Contact
+      </NavLink>
+      <NavLink
+        className="navi"
+        activeClassName="navi nav-link active"
+        to="about"
+      >
+        About
+      </NavLink>
+
+      <NavLink
+        className="navi"
+        activeClassName="navi nav-link active"
+        to="/"
+        exact
+      >
+        Home
+      </NavLink>
+    </Nav>
+  </Navbar>
+);
 
 }

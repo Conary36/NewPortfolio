@@ -5,19 +5,23 @@ $g: 1em;
 $n: 7;
 $c: #4B384C;
 
-.navbar{
-    position: fixed !important;
-}
+// .navbar{
+//     position: fixed !important;
+// }
 
 .sidebar-left{
-    
-    position: fixed;
-    float: left;
-    top: 0;
-    left: 0;
-    width: 10em;  
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 14em;
     height: 100vh;
-    color: white;
+    color: var(--lightest-slate);
+    font-family: var(--font-mono);
+    counter-reset: item 0;
+    z-index: 12;
     background-color: #F5F105;
     
    // overflow-x: hidden;
@@ -29,12 +33,14 @@ $c: #4B384C;
             transform: rotate(270deg);
             transform-origin: left center 4;
             cursor: vertical-text;
-            font-size: 1em;
-            font-family: 'Menlo', monospace;
+            font-size: 2em;
+            font-family: sans-serif;
             white-space: nowrap;
             letter-spacing: 3px;
            // position: relative;
-          
+            -webkit-box-align: center;
+           
+}
             
            .navi{
                display: flex;
@@ -49,8 +55,6 @@ $c: #4B384C;
 }
 
 
- 
-}
 
 .icons{
     display: inline-flex;
