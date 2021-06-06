@@ -90,21 +90,3 @@ export default function Projects() {
   );
 }
 
-/*
-
-<ul>
-                  <li>{proj.projectName}</li>
-                  <li>{proj.description}</li>
-                  <li>
-                    {" "}
-                    <Button
-                      href={proj.projectUrl}
-                      className="projects-slider__button"
-                      target="_blank"
-                    >
-                      Open Link
-                    </Button>
-                  </li>
-                </ul>
-
-*/
