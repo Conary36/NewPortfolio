@@ -5,7 +5,8 @@ import '../styles/about.scss'
 export default function About(){
 
 return (
-    <div id='title'>
+    <>
+    <div id='title' className='transitions'>
          <h1>About</h1>
          <span>Programming a new world one project at a time, this is my passion.</span><br/> 
          <span>My creative abilities come to life</span>
@@ -14,6 +15,7 @@ return (
             <button>Projects</button>
         </Link>
     </div>
+    </>
         
  )
 }

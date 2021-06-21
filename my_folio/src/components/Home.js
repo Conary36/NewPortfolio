@@ -4,7 +4,7 @@ import Image from 'react-bootstrap/Image'
 
 export default function Home(){
     return (
-    <div className='home_content'>
+    <div className='home_content transitions'>
         <section className='home_img'>
              <Image fluid/>
         </section>

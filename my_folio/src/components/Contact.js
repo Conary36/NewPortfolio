@@ -39,7 +39,7 @@ class Contact extends React.Component{
     render(){
 
         return(
-            <div className='form-container'>
+            <div className='form-container transitions'>
             <Card  style={{width: '30rem'}} className='card-form'>
                 <Form  onSubmit={this.handleSubmit.bind(this)} method="POST">
                     <Form.Group controlId="formName">

@@ -16,7 +16,7 @@ $c: #4B384C;
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    width: 100em;
+    // width: 100em;
    // height: 100vh;
     color: var(--lightest-slate);
     font-family: var(--font-mono);
@@ -28,7 +28,7 @@ $c: #4B384C;
     padding-top: 20px;
    // z-index: 2;
         .vertical-text-left{
-            display: flex;
+            display: flex-end;
             align-items: center;
            // transform: rotate(270deg);
             transform-origin: left center 4;

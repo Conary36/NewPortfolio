@@ -38,11 +38,7 @@ export default function Projects() {
 
   console.log("projectData==>>", projectData);
 
-  // description: "some derjhfdkfbdjhbkjlsdbjhlbjsbhjbsdhjbdsjbh";
-  // projectImg: "stash.png";
-  // projectName: "Stash";
-  // projectUrl: "https://stashfoodapp.netlify.app";
-
+  
   return (
     <div className="overall-container">
       <Swiper
