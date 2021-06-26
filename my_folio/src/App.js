@@ -56,10 +56,10 @@ function App() {
           {/*<animated.div style={props}>*/}
             {/*<Switch location={item}>*/}
             <Switch >
-              <Route component={Home} path="/" exact={true} />
-              <Route component={About} path="/about" />
-              <Route component={Contact} path="/contact" />
-              <Route component={Projects} path="/projects" />
+              <Route exact component={Home} path="/" />
+              <Route exact component={About} path="/about" />
+              <Route exact component={Contact} path="/contact" />
+              <Route exact component={Projects} path="/projects" />
             </Switch>
          {/* </animated.div>*/}
         {/*))}*/}

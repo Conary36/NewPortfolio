@@ -15,40 +15,40 @@ export default function Navigation(){
 
 
 return (
-  <Navbar className="sidebar-left">
-    <Nav id="nav" className="vertical-text-left">
-      <NavLink
+  <Navbar>
+    <ul>
+      <NavLink className={"line"}
         onClick={() => {
           fadeOut();
         }}
-        className="navi"
+        // className="navi"
         activeClassName="navi nav-link active"
         to="/"
         exact
       >
         Home
       </NavLink>
-      <NavLink
+      <NavLink className={"line"}
         onClick={() => {
           fadeOut();
         }}
-        className="navi"
+        // className="navi"
         activeClassName="navi nav-link active"
         to="about"
       >
         About
       </NavLink>
-      <NavLink
+      <NavLink className={"line"}
         onClick={() => {
           fadeOut();
         }}
-        className="navi"
+        // className="navi"
         activeClassName="navi nav-link active"
         to="contact"
       >
         Contact
       </NavLink>
-    </Nav>
+    </ul>
   </Navbar>
 );
 
