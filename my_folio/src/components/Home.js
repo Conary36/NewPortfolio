@@ -14,7 +14,7 @@ export default function Home(){
 
     return (
       <Slide direction="left" in={checked} mountOnEnter unmountOnExit>
-        <div>
+        <div className="home_style">
           <section className="home_img">
             <Image fluid />
           </section>

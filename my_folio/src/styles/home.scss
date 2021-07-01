@@ -1,13 +1,23 @@
+.home_style {
+  background-color: #e600a6;
+  height: 100vh;
+  // margin: 1%;
+  width: 100%;
 
-  // .home_img {
-  //   display: inline-block;
-  //   vertical-align: top;
-  //   margin: 1%;
-  //   width: 49%;
-  //   min-width: 250px;
-  // }
-.home_img{
-  background-color: yellow;
-  
+  .home_img {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1%;
+    width: 48%;
+    min-width: 250px;
+  }
+
+  .bio{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1%;
+    width: 48%;
+    min-width: 250px;
+  }
 }
-  
+
