@@ -16,7 +16,7 @@ import './index.scss'
 function App() {
 
   const [background, setBackground] = useState("");
- //Pass 
+ 
 
   return (
     <div style={{ backgroundColor: background }}>
@@ -30,9 +30,16 @@ function App() {
             }}
             path="/"
           />
-          <Route exact component={About} path="/about" />
-          <Route exact component={Contact} path="/contact" />
-          <Route exact component={Projects} path="/projects" />
+          <Route exact render={()=>{
+            return <About setBackground={setBackground("#DBF500")} />;
+          }} path="/about" />
+          <Route exact render={()=>{
+            return <Contact setBackground={setBackground("#13FFB0")}/>;
+          }} path="/contact" />
+          <Route exact render={()=>{
+            return <Projects setBackground={setBackground("#2C1591")} />;
+      
+          }} path="/projects" />
         </Switch>
       </main>
     </div>
