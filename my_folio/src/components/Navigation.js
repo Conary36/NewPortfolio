@@ -32,7 +32,7 @@ return (
         fadeOut();
       }}
       // className="navi"
-      activeClassName="navi nav-link active"
+      // activeClassName="navi nav-link active"
       to="/"
       exact
     >
@@ -44,7 +44,7 @@ return (
         fadeOut();
       }}
       // className="navi"
-      activeClassName="navi nav-link active"
+      // activeClassName="navi nav-link active"
       to="about"
     >
       About
@@ -55,7 +55,7 @@ return (
         fadeOut();
       }}
       // className="navi"
-      activeClassName="navi nav-link active"
+      // activeClassName="navi nav-link active"
       to="contact"
     >
       Contact

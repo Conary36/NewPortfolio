@@ -13,8 +13,20 @@ nav{
     //show line width
     //show line color
     //only show line when active link is clicked at position
-    
+    color: blue;
+    padding: 1%;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
 }
+.line:hover, a:focus {
+    background-size: 100% 2px;
+}
+    
+
 //previous link will hold line for .5s
 //then previous will move to active link
 //need to check if line is moving from left to right or right to left.
