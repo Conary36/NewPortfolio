@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import {Form, Card} from 'react-bootstrap';
-import '../styles/contact.scss'
+import '../styles/contact.scss';
+import Slide from "@material-ui/core/Slide";
 
 
 class Contact extends React.Component{
@@ -11,10 +12,19 @@ class Contact extends React.Component{
             name: '',
             email: '',
             phone: '',
-            message: ''
+            message: '',
+            checked: false
 
         }
     }
+
+ componentDidMount(){
+     this.setState({ 
+         checked: !this.state.checked 
+     })
+ }
+
+      
 
      handleSubmit(e){
         e.preventDefault();
@@ -32,14 +42,19 @@ class Contact extends React.Component{
             }
         })
     }
+
+
     resetForm(e){
         this.setState({name: '', email: '', phone: '', message: ''})
     }
 
+    
+
     render(){
 
         return(
-            <div className='form-container'>
+            <Slide direction="left" in={this.state.checked} mountOnEnter unmountOnExit>
+            <div >
             <Card  style={{width: '30rem'}} className='card-form'>
                 <Form  onSubmit={this.handleSubmit.bind(this)} method="POST">
                     <Form.Group controlId="formName">
@@ -62,6 +77,7 @@ class Contact extends React.Component{
                 </Form>
             </Card>
         </div>
+        </Slide>
         )
     }
 

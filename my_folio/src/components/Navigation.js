@@ -1,39 +1,66 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import {Navbar,Nav} from 'react-bootstrap';
+// import {Navbar,Nav} from 'react-bootstrap';
 // import {SocialIcon} from 'react-social-icons';
 // import * as FaIcons from "react-icons/fa";
 import '../styles/navigation.scss'
+import clsx from "clsx";
 
-
-
-
+function fadeOut(){
+  var v = document.getElementsByClassName("transitions");
+  v.className += "transitionsOut";
+  
+};
 
 export default function Navigation(){
 
+  //create state to hold positon of lines
+  // use width of active link to match width of line
+  // const navBarRef = useRef()
 
-return(
-   
-    
-    <Navbar className="sidebar-left">
-            <Nav id="nav" className="vertical-text-left">
-                <NavLink className="navi" to="contact">
-                    Contact
-                </NavLink>
-                <NavLink className="navi" to="about">
-                    About
-                </NavLink>
-                  
-                <NavLink className="navi" to="/" exact>
-                    Home
-                </NavLink>
-                
-            </Nav>
-      
-    </Navbar>
-     
+  // function getWid(){
+  //   navBarRef.current.width
+  // }
   
-    
-)
+
+return (
+  <nav>{/*ref={navBarRef} */}
+    <NavLink
+      className="line"
+      // className={clsx("foo", someState && "bar")}
+      onClick={() => {
+        fadeOut();
+      }}
+      // className="navi"
+      // activeClassName="navi nav-link active"
+      to="/"
+      exact
+    >
+      Home
+    </NavLink>
+    <NavLink
+      className="line"
+      onClick={() => {
+        fadeOut();
+      }}
+      // className="navi"
+      // activeClassName="navi nav-link active"
+      to="about"
+    >
+      About
+    </NavLink>
+    <NavLink
+      className="line"
+      onClick={() => {
+        fadeOut();
+      }}
+      // className="navi"
+      // activeClassName="navi nav-link active"
+      to="contact"
+    >
+      Contact
+    </NavLink>
+  </nav>
+);
 
 }
